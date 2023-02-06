@@ -11,14 +11,14 @@ void loop() {
   Serial.print("\ncela fait ");
   if(secondes < 60){
     Serial.print(secondes);
-    Serial.print(" secondes que le programme a ete lance.\n");
+    Serial.print(" secondes que le programme a ete lance !\n");
   } else {
     minutes = secondes / 60;
     secondes_restantes = secondes - minutes * 60;
     Serial.print(minutes);
     Serial.print(" minutes et ");
     Serial.print(secondes_restantes);
-    Serial.print(" secondes que le programme a ete lance.\n");
+    Serial.print(" secondes que le programme a ete lance !\n");
   }
   delay(1000);
   secondes = secondes + 1;
