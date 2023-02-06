@@ -1,0 +1,6 @@
+# ignore everything in current directory
+/*
+
+# except these files
+!.gitignore 
+!compteur/compteur.ino
