@@ -36,17 +36,17 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   show_fqbn();
-  Serial.print("\ncela fait ");
+  Serial.print("\nThis program was run ");
   if(secondes < 60){
     Serial.print(secondes);
-    Serial.print(" secondes que le programme a ete lance !\n");
+    Serial.print(" seconds ago !\n");
   } else {
     minutes = secondes / 60;
     secondes_restantes = secondes - minutes * 60;
     Serial.print(minutes);
-    Serial.print(" minutes et ");
+    Serial.print(" minutes and ");
     Serial.print(secondes_restantes);
-    Serial.print(" secondes que le programme a ete lance !\n");
+    Serial.print(" seconds ago !\n");
   }
   delay(1000);
   secondes = secondes + 1;
